@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sweet Delights Bakery</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Sweet Delights Bakery</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="home">
+        <h2>Welcome to Sweet Delights</h2>
+        <p>Enjoy the finest handmade desserts crafted with love.</p>
+    </section>
+
+   <div style="background-image:url('images/images/images.jpg');"></div>
+    
+    <section id="slider">
+        <h2>Featured Desserts</h2>
+        <div class="slider-container">
+            <div class="slider">
+                <img src="images/images/chocolate-frosted-cake-89183-2.jpg" alt="Delicious Cake">
+                <img src="images/images/images.jpg" alt="Tasty Cupcakes">
+                <img src="images/images/pastries" alt="Fresh Pastries">
+                <img src="images/images/Fun-Cakes-20201119-Glutenvrije-Macarons-02-1000x667.jpg" alt="macarons">
+                <img src="images/images/lotus cheesecake.jpg"  alt="cheesecake">
+            </div>
+        </div>
+    </section>
+    
+    <section id="menu">
+        <h2>Our Menu</h2>
+        <div class="menu-item">
+            <img src="images/images/13OnDessert-jumbo-v2.jpg" alt="Chocolate Cake">
+            <h3>Chocolate Cake</h3>
+            <p>$10.99</p>
+            <button onclick="addToCart('Chocolate Cake', 10.99)">Add to Cart</button>
+        </div>
+        <div class="menu-item">
+            <img src="images/images/vanilla cupcake.jpg" alt="Cupcake">
+            <h3>Vanilla Cupcake</h3>
+            <p>$3.99</p>
+            <button onclick="addToCart('Vanilla Cupcake', 3.99)">Add to Cart</button>
+        </div>
+        <div class="menu-item">
+            <img src="images/images/macaron.jpg" alt="Macarons">
+            <h3>Macarons</h3>
+            <p>$8.99</p>
+            <button onclick="addToCart('Macarons', 8.99)">Add to Cart</button>
+        </div>
+        <div class="menu-item">
+            <img src="images/images/NY-Cheesecake.webp" alt="Cheesecake">
+            <h3>Cheesecake</h3>
+            <p>$6.99</p>
+            <button onclick="addToCart('Cheesecake', 6.99)">Add to Cart</button>
+        </div>
+        <div class="menu-item">
+            <img src="images/images/glazed donut.jpg " alt="Donut">
+            <h3>Glazed Donut</h3>
+            <p>$2.50</p>
+            <button onclick="addToCart('Glazed Donut', 2.50)">Add to Cart</button>
+        </div>
+    </section>
+    
+    <section id="gallery">
+        <h2>Gallery</h2>
+        <img src="images/pastries" alt="Delicious Pastries">
+        <img src="images/bread" alt="Freshly Baked Bread">
+    </section>
+    
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message"></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+    
+    <footer>
+        <p>&copy; 2025 Sweet Delights Bakery</p>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
+
