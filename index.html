@@ -4,72 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bakery Shop</title>
-    <link rel="stylesheet" href="styles.css">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #fff8e1;
-        }
-        header {
-            background-color: #ffcc80;
-            padding: 20px;
-            text-align: center;
-        }
-        nav ul {
-            list-style: none;
-            padding: 0;
-        }
-        nav ul li {
-            display: inline;
-            margin: 0 15px;
-        }
-        nav ul li a {
-            text-decoration: none;
-            color: #5d4037;
-            font-weight: bold;
-        }
-        section {
-            padding: 20px;
-            text-align: center;
-        }
-        .product-list {
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-        }
-        .product {
-            background-color: #ffe0b2;
-            padding: 15px;
-            border-radius: 10px;
-            cursor: pointer;
-            transition: transform 0.3s ease-in-out;
-        }
-        .product:hover {
-            transform: scale(1.1);
-        }
-        form {
-            display: flex;
-            flex-direction: column;
-            gap: 10px;
-            width: 50%;
-            margin: auto;
-        }
-        input, textarea {
-            padding: 10px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-        }
-        button {
-            background-color: #ff9800;
-            color: white;
-            padding: 10px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-    </style>
+    <link rel="stylesheet" href="css/style.css">
+    
 </head>
 <body>
     <header>
@@ -88,6 +24,8 @@
         <h2>Fresh & Delicious Baked Goods</h2>
         <p>Experience the best bakery items made with love and passion.</p>
     </section>
+
+    <img src="images/bakery.jpg" alt="bakery shop">
     
     <section id="products">
         <h2>Our Products</h2>
@@ -114,18 +52,8 @@
         <p id="form-message" style="color: green; display: none;">Message sent successfully!</p>
     </section>
     
-    <script>
-        function showAlert(product) {
-            alert('You selected ' + product);
-        }
-
-        function submitForm(event) {
-            event.preventDefault();
-            document.getElementById("form-message").style.display = "block";
-            setTimeout(() => {
-                document.getElementById("form-message").style.display = "none";
-            }, 3000);
-        }
-    </script>
+    
+    
+    <script src="main.js"></script>
 </body>
 </html>
