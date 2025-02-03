@@ -3,7 +3,6 @@ body {
     margin: 0;
     padding: 0;
     background-color: #fff8e1;
-    
 }
 
 
@@ -12,28 +11,34 @@ header {
     padding: 20px;
     text-align: center;
 }
+
 nav ul {
     list-style: none;
     padding: 0;
 }
+
 nav ul li {
     display: inline;
     margin: 0 15px;
 }
+
 nav ul li a {
     text-decoration: none;
     color: #5d4037;
     font-weight: bold;
 }
+
 section {
     padding: 20px;
     text-align: center;
 }
+
 .product-list {
     display: flex;
     justify-content: center;
     gap: 20px;
 }
+
 .product {
     background-color: #ffe0b2;
     padding: 15px;
@@ -41,9 +46,11 @@ section {
     cursor: pointer;
     transition: transform 0.3s ease-in-out;
 }
+
 .product:hover {
     transform: scale(1.1);
 }
+
 form {
     display: flex;
     flex-direction: column;
@@ -63,4 +70,9 @@ button {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+}
+
+.products img {
+    text-align: center;
+    
 }
