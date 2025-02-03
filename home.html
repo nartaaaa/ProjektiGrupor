@@ -76,55 +76,17 @@
         <h1>Welcome to Sweet Bakery</h1>
         <nav>
             <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#products">Products</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
     
-    <section id="home">
-        <h2>Fresh & Delicious Baked Goods</h2>
-        <p>Experience the best bakery items made with love and passion.</p>
-    </section>
-    
-    <section id="products">
-        <h2>Our Products</h2>
-        <div class="product-list">
-            <div class="product" onclick="showAlert('Cupcakes')">Cupcakes</div>
-            <div class="product" onclick="showAlert('Croissants')">Croissants</div>
-            <div class="product" onclick="showAlert('Breads')">Breads</div>
-        </div>
-    </section>
-    
-    <section id="about">
-        <h2>About Us</h2>
-        <p>Sweet Bakery has been serving delicious baked goods for over 10 years.</p>
-    </section>
-    
-    <section id="contact">
-        <h2>Contact Us</h2>
-        <form onsubmit="submitForm(event)">
-            <input type="text" id="name" placeholder="Your Name" required>
-            <input type="email" id="email" placeholder="Your Email" required>
-            <textarea id="message" placeholder="Your Message" required></textarea>
-            <button type="submit">Send</button>
-        </form>
-        <p id="form-message" style="color: green; display: none;">Message sent successfully!</p>
-    </section>
-    
     <script>
         function showAlert(product) {
             alert('You selected ' + product);
-        }
-
-        function submitForm(event) {
-            event.preventDefault();
-            document.getElementById("form-message").style.display = "block";
-            setTimeout(() => {
-                document.getElementById("form-message").style.display = "none";
-            }, 3000);
         }
     </script>
 </body>
