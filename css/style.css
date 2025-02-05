@@ -1,78 +1,118 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #fff8e1;
+    background-color: black;
+    color: white;
+    background: url(/images/images/dark);
 }
 
-
 header {
-    background-color: #ffcc80;
-    padding: 20px;
+    background-color:black;
+    color: white;
     text-align: center;
+    padding: 1.5rem;
+    font-size: 1.5rem;
+    text-decoration-line: red;
+    
 }
 
 nav ul {
     list-style: none;
     padding: 0;
+    display: flex;
+    justify-content: right;
+    gap: 20px;
+    color: red;
+    text-decoration-line: underline;
 }
 
-nav ul li {
-    display: inline;
-    margin: 0 15px;
-}
-
-nav ul li a {
+nav a {
     text-decoration: none;
-    color: #5d4037;
+    color: white;
     font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #ffdd57;
 }
 
 section {
-    padding: 20px;
+    padding: 2rem;
     text-align: center;
 }
 
-.product-list {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
+section #gallery{
+    width: 100px;
+    height: 100px;
 }
 
-.product {
-    background-color: #ffe0b2;
-    padding: 15px;
-    border-radius: 10px;
-    cursor: pointer;
+.menu-item {
+    display: inline-block;
+    background: rgb(13, 3, 3);
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    margin: 15px;
+    padding: 20px;
+    width: 220px;
     transition: transform 0.3s ease-in-out;
 }
 
-.product:hover {
-    transform: scale(1.1);
+.menu-item:hover {
+    transform: scale(1.05);
 }
 
-form {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    width: 50%;
-    margin: auto;
+.menu-item img {
+    width: 100%;
+    border-radius: 10px;
 }
-input, textarea {
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
+
 button {
     background-color: #ff9800;
     color: white;
-    padding: 10px;
     border: none;
-    border-radius: 5px;
+    padding: 12px;
+    border-radius: 8px;
     cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.2s;
 }
 
-.products img {
+button:hover {
+    background-color: #e68900;
+    transform: scale(1.1);
+}
+
+.slider-container {
+    width: 50%;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+    border-radius: 15px;
+}
+
+.slider {
+    display: flex;
+    width: 100%;
+    animation: slide 9s infinite;
+}
+
+.slider img {
+    width: 33.33%;
+    border-radius: 15px;
+}
+
+@keyframes slide {
+    0% { transform: translateX(0); }
+    33% { transform: translateX(-33.33%); }
+    66% { transform: translateX(-66.66%); }
+    100% { transform: translateX(0); }
+}
+
+footer {
     text-align: center;
-    
+    padding: 1.5rem;
+    background-color: #d2691e;
+    color: white;
 }
