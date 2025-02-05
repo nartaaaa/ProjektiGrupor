@@ -6,13 +6,120 @@
     <title>Document</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
+<style>
+    p{
+        font-weight: bold;
+        color: orange;
+        font-size: 70px;
+        text-align: center;
+    }
+</style>
+<p>Welcome to Menu</p>
 <body>
+    <ul class="nav nav-tabs">
+        <li class="nav-item">
+          <a class="nav-link active" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#About">#About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contactus.html">Contact Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#">Disabled</a>
+        </li>
+      </ul>
 
-    <img src="images/strawberry cupcake.jpg" alt="frosted cupcakes">
-    <p>Our delicious strawberry cupcakes</p>
 
-    <img src="images/cherry-cupcakes.webp" alt="">
-    <p>Brand new recipe for cherry cupcakes</p>
+    <section id="menu">
+        <h2>Our Menu</h2>
+        <div class="menu-item">
+            <img src="images/images/13OnDessert-jumbo-v2.jpg" alt="Chocolate Cake">
+            <h3>Chocolate Cake</h3>
+            <p>$10.99</p>
+            <button onclick="addToCart('Chocolate Cake', 10.99)">Add to Cart</button>
+        </div>
+        <div class="menu-item">
+            <img src="images/images/vanilla cupcake.jpg" alt="Cupcake">
+            <h3>Vanilla Cupcake</h3>
+            <p>$3.99</p>
+            <button onclick="addToCart('Vanilla Cupcake', 3.99)">Add to Cart</button>
+        </div>
+        <div class="menu-item">
+            <img src="images/images/macaron.jpg" alt="Macarons">
+            <h3>Macarons</h3>
+            <p>$8.99</p>
+            <button onclick="addToCart('Macarons', 8.99)">Add to Cart</button>
+        </div>
+        <div class="menu-item">
+            <img src="images/images/NY-Cheesecake.webp" alt="Cheesecake">
+            <h3>Cheesecake</h3>
+            <p>$6.99</p>
+            <button onclick="addToCart('Cheesecake', 6.99)">Add to Cart</button>
+        </div>
+        <div class="menu-item">
+            <img src="images/images/glazed donut.jpg " alt="Donut">
+            <h3>Glazed Donut</h3>
+            <p>$2.50</p>
+            <button onclick="addToCart('Glazed Donut', 2.50)">Add to Cart</button>
+        </div>
+
+
+
+        <div class="menu-item">
+            <img src="images/images/glazed donut.jpg " alt="Donut">
+            <h3>Glazed Donut</h3>
+            <p>$2.50</p>
+            <button onclick="addToCart('Glazed Donut', 2.50)">Add to Cart</button>
+        </div>
+
+
+
+
+
+
+        <section id="menu">
+            <h2>Our Menu</h2>
+            <div class="menu-item">
+                <img src="images/images/13OnDessert-jumbo-v2.jpg" alt="Chocolate Cake">
+                <h3>Chocolate Cake</h3>
+                <p>$10.99</p>
+                <button onclick="addToCart('Chocolate Cake', 10.99)">Add to Cart</button>
+            </div>
+            <div class="menu-item">
+                <img src="images/images/vanilla cupcake.jpg" alt="Cupcake">
+                <h3>Vanilla Cupcake</h3>
+                <p>$3.99</p>
+                <button onclick="addToCart('Vanilla Cupcake', 3.99)">Add to Cart</button>
+            </div>
+            <div class="menu-item">
+                <img src="images/images/macaron.jpg" alt="Macarons">
+                <h3>Macarons</h3>
+                <p>$8.99</p>
+                <button onclick="addToCart('Macarons', 8.99)">Add to Cart</button>
+            </div>
+            <div class="menu-item">
+                <img src="images/images/NY-Cheesecake.webp" alt="Cheesecake">
+                <h3>Cheesecake</h3>
+                <p>$6.99</p>
+                <button onclick="addToCart('Cheesecake', 6.99)">Add to Cart</button>
+            </div>
+            <div class="menu-item">
+                <img src="images/images/glazed donut.jpg " alt="Donut">
+                <h3>Glazed Donut</h3>
+                <p>$2.50</p>
+                <button onclick="addToCart('Glazed Donut', 2.50)">Add to Cart</button>
+            </div>
+    
+    
+    
+            <div class="menu-item">
+                <img src="images/images/glazed donut.jpg " alt="Donut">
+                <h3>Glazed Donut</h3>
+                <p>$2.50</p>
+                <button onclick="addToCart('Glazed Donut', 2.50)">Add to Cart</button>
+            </div>
 </body>
 <script src="main.js"></script>
 </html>
