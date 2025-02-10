@@ -1,5 +1,5 @@
 ocument.addEventListener("DOMContentLoaded", () => {
-    // Slider functionality
+    
     const slider = document.querySelector(".slider");
     let index = 0;
     
@@ -10,7 +10,7 @@ ocument.addEventListener("DOMContentLoaded", () => {
     }
     setInterval(nextSlide, 3000);
     
-    // Smooth scrolling for navigation
+    
     document.querySelectorAll("nav a").forEach(anchor => {
         anchor.addEventListener("click", function (e) {
             e.preventDefault();
@@ -19,7 +19,7 @@ ocument.addEventListener("DOMContentLoaded", () => {
         });
     });
     
-    // Add to cart functionality
+   
     const cart = [];
     function addToCart(name, price) {
         cart.push({ name, price });
@@ -28,7 +28,7 @@ ocument.addEventListener("DOMContentLoaded", () => {
     
     window.addToCart = addToCart;
     
-    // Contact form submission
+    
     const contactForm = document.querySelector("form");
     contactForm.addEventListener("submit", function (e) {
         e.preventDefault();
