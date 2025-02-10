@@ -2,18 +2,23 @@ body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: aquamarine;
+    background-color: black;
     color: orange;
     background: url(/images/images/dark);
 }
 
+li{
+    text-align: center;
+}
+
 header {
-    background-color:aquamarine;
+    background-color:black;
     color: orange;
     text-align: center;
     padding: 1.5rem;
     font-size: 1.5rem;
-    text-decoration-line: red;
+    text-decoration-line: orange;
+   
     
 }
 
