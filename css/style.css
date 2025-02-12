@@ -12,7 +12,7 @@ li{
 }
 
 header {
-    background-color:aqua;
+    background: url(/images/images/dark);
     color: orange;
     text-align: center;
     padding: 1.5rem;
